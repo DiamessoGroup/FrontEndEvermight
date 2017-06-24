@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*Beginning Nav*/
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #F44336;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/*
+#nav li {
+    display: inline;
+}
+*/
+
+#menuItem li {
+    float: right;
+}
+
+#navImg {
+    float: left;
+    display: block;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 20px 16px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 23px;
+}
+
+a:hover {
+    color: black;
+}
+
+#youtubeLogo {
+    float: left;
+    width: 100px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    padding: 5px;
+}
+
+
+/*End Nav*/
+
+
+/*Beginner banner image*/
+
+.banner {
+    margin-top: 45px;
+    background-image: url("/img/stockimg3.jpg");
+    width: auto;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+
+
+/*Beginning Banner Text*/
+
+.bannerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.bannerText h2 {
+    font-size: 55px;
+    -webkit-text-shadow: 1px 3px grey;
+    -moz-text-shadow: 1px 3px grey;
+    -ms-text-shadow: 1px 3px grey;
+    -o-text-shadow: 1px 3px grey;
+    text-shadow: 2px 3px grey;
+}
+
+.bannerText p {
+    font-size: 20px;
+}
+
+
+/*End Banner Text*/
+
+
+/*Beginner Footer*/
+
+.footer {
+    background-color: black;
+    text-align: center;
+}
+
+.footer p {
+    padding: 100px 0px;
+    color: white;
+}
+
+
+/*End Footer*/
+
+
+/*Beginning Responsive*/
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/*Main Row at 1440px*/
+
+.row {
+    max-width: 1440px;
+    margin: 15px auto;
+}
+
+
+/*Image Unit in row*/
+
+.row img {
+    width: 100%;
+    height: auto;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+
+/*Beginning Scale Effect*/
+
+.imgBox:hover img {
+    transform: scale(1.1);
+}
+
+.imgBox {
+    width: 400px;
+    overflow: hidden;
+}
+
+
+/*End Scale Effect*/
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 767px) {
+    [class*="col-"] {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    [class*="col-"] {
+        width: 33.33%;
+    }
+}
+
+
+/*End Responsive*/
+
+.row p {
+    -webkit-word-break: keep-all;
+    -moz-word-break: keep-all;
+    -ms-word-break: keep-all;
+    -o-word-break: keep-all;
+    word-break: keep-all;
+}
