@@ -33,19 +33,17 @@ ul {
     z-index: 1;
 }
 
-/*
-#nav li {
-    display: inline;
+#navImg {
+    float: left;
 }
-*/
 
-#menuItem li {
+#menuItem {
     float: right;
 }
 
-#navImg {
+#menuItem li {
+    vertical-align: middle;
     float: left;
-    display: block;
 }
 
 li a {
@@ -62,7 +60,7 @@ a:hover {
 }
 
 #youtubeLogo {
-    float: left;
+    /*    float: left;*/
     width: 100px;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
