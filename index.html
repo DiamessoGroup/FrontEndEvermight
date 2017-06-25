@@ -17,7 +17,7 @@
 <body>
 
     <!-- Hello,
-The purpose is to make a responsive web page.  There are 2 images contained in the folder that indicate what the page should look like in desktop and tablet mode.  This video will also provide more detail on what mobile requirements for the page: https://youtu.be/uhIdHMsN74M
+This video will also provide more detail on what mobile requirements for the page: https://youtu.be/uhIdHMsN74M
 
 Here are some additional requirements for the assignment:
 1.    You must use CSS and HTML only. PHP is permitted if you want to render data. You can NOT use bootstrap, javascript or any 3rd party library.++
@@ -26,18 +26,30 @@ Here are some additional requirements for the assignment:
 4.    The text in the hero area should have a text shadow++
 5.    Link hover states shoud have a different color++
 6.    The results grid goes from 3 columns to 2 columns to 1 column when you go from desktop to mobile++
-7.    For the results grid, there should be a max width of 1440px. Once screen beyond that width, grid should stay centered.
+7.    For the results grid, there should be a max width of 1440px. Once screen beyond that width, grid should stay centered.++
 8.    For the results grid, when you shrink the window size below 1440px, the thumbnail images should have dynamic width and height to ensure width of screen is always filled.++
 9.    In desktop, When you change the text "Burrito of Amazement" via debugger to something much longer like "Burrito that will make you feel amazement", that the text continues to stay at the bottom
 10. Paste the html into achecker.ca and it must pass the WCAG +
-11. The navigation stays at the top. +
+11. The navigation stays at the top. ++
 12. In tablet and mobile, when you hover over the logo, there is animation of navigation and animation of overlay background
-13. Hover over result item to see image scale in size -->
+13. Hover over result item to see image scale in size 
+   -->
     <!--BEGINNING NAV-->
 
     <ul id="nav">
         <div id="navImg">
             <img src="img/YouTube-logo.png" id="youtubeLogo" alt='Website Logo'>
+            <!--BEGINNING OVERLAY-->
+            <div id="overlayBack"></div>
+            <div id="myOverlay" class="overlay">
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <a href="#">Services</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+            <!--END OVERLAY-->
         </div>
         <div id="menuItem">
             <li><a href="#services">Services</a></li>
@@ -46,6 +58,8 @@ Here are some additional requirements for the assignment:
         </div>
     </ul>
     <!--End NAV-->
+
+
 
     <!--BEGINNING BANNER-->
     <div class='banner'>
