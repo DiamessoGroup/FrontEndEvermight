@@ -161,8 +161,8 @@ a:hover {
 .item img {
     width: 100%;
     height: auto;
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
     overflow: hidden;
 }
 
@@ -170,8 +170,8 @@ a:hover {
 /*Beginning Scale Effect*/
 
 .imgBox:hover img {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 .imgBox {
@@ -179,6 +179,18 @@ a:hover {
     position: relative;
     padding: 5px;
     width: 75%;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+
+.bottomleft h3,
+p {
+    color: white;
 }
 
 
